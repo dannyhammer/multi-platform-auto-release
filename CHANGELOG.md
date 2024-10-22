@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.4](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.3...v0.5.4) (2024-10-22)
+
+
+### Bug Fixes
+
+* changed list of release files ([0c12274](https://github.com/dannyhammer/multi-platform-auto-release/commit/0c1227488a18b6f3160896f24cbd9c4c070380d2))
+* removed matrix from PR creation ([1e4674d](https://github.com/dannyhammer/multi-platform-auto-release/commit/1e4674d8cbc669e9b9b5d9533b20e1cc51f1f875))
+
 ## [0.5.3](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.2...v0.5.3) (2024-10-22)
 
 
