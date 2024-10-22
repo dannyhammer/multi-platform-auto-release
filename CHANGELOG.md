@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.2](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.4.1...v0.4.2) (2024-10-22)
+
+
+### Bug Fixes
+
+* added checkout ([933f348](https://github.com/dannyhammer/multi-platform-auto-release/commit/933f34800610e6c852db751829a082c8f5d8969c))
+* moved checkout ([2a5987f](https://github.com/dannyhammer/multi-platform-auto-release/commit/2a5987f9866ccd1fc585299ecedecf09a8e1f505))
+
 ## [0.4.1](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.4.0...v0.4.1) (2024-10-22)
 
 
