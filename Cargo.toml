@@ -1,5 +1,5 @@
 [package]
-name = "multi-platform-auto-release"
+name = "rust-release-pipeline"
 version = "0.7.0"
 edition = "2021"
 

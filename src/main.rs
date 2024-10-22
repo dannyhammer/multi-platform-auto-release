@@ -1,3 +1,5 @@
+use std::env::consts::OS;
+
 fn main() {
-    println!("Hello from {}", env!("CARGO_PKG_NAME"));
+    println!("You are on {OS}");
 }
