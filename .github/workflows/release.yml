@@ -51,21 +51,22 @@ jobs:
                   ARCHIVE_TYPES: ${{ matrix.archive }}
                   EXTRA_FILES: "README.md"
 
+            # - name: Upload Artifact (${{ matrix.target }})
+            #   if: ${{ steps.release.outputs.release_created }}
+            #   uses: actions/upload-artifact@v4
+            #   with:
+            #       name: Binary (${{ matrix.target }})
+            #       path: |
+            #           ${{ steps.build.outputs.BUILT_ARCHIVE }}
+            #           ${{ steps.build.outputs.BUILT_CHECKSUM }}
+            #       if-no-files-found: error
+
             - name: Upload Artifact (${{ matrix.target }})
               if: ${{ steps.release.outputs.release_created }}
-              uses: actions/upload-artifact@v3
-              with:
-                  name: Binary (${{ matrix.target }})
-                  path: |
-                      ${{ steps.build.outputs.BUILT_ARCHIVE }}
-                      ${{ steps.build.outputs.BUILT_CHECKSUM }}
-
-            # - name: Upload Release Artifact(s)
-            #   if: ${{ steps.release.outputs.release_created }}
-            #   env:
-            #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            #   # run: gh release upload ${{ steps.release.outputs.tag_name }} ./target/release/multi-platform-auto-release
-            #   run: gh release upload ${{ steps.release.outputs.tag_name }} release_ubuntu release_mac release_windows
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              # run: gh release upload ${{ steps.release.outputs.tag_name }} ./target/release/multi-platform-auto-release
+              run: gh release upload ${{ steps.release.outputs.tag_name }} ${{ matrix.archive }}
 
     # build-release:
     #     name: Build Release
