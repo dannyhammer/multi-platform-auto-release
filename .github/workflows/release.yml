@@ -36,22 +36,24 @@ jobs:
                   # for more options
                   release-type: rust
 
-            - uses: actions/checkout@v4
+            - name: Checkout (${{ matrix.target }})
+              if: ${{ steps.release.outputs.release_created }}
+              uses: actions/checkout@v4
+
             - name: Build Artifact (${{ matrix.target }})
-              # if: ${{ steps.release.outputs.release_created }}
               id: build
               uses: rust-build/rust-build.action@v1.4.5
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
                   RUSTTARGET: ${{ matrix.target }}
-                  ARCHIVE_TYPES: ${{ matrix.archives }}
+                  ARCHIVE_TYPES: ${{ matrix.archive }}
                   EXTRA_FILES: "README.md"
 
             - name: Upload Artifact (${{ matrix.target }})
               uses: actions/upload-artifact@v3
               with:
-                  name: Binary
+                  name: Binary (${{ matrix.target }})
                   path: |
                       ${{ steps.build.outputs.BUILT_ARCHIVE }}
                       ${{ steps.build.outputs.BUILT_CHECKSUM }}
