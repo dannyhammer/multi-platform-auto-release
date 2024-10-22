@@ -27,6 +27,7 @@ jobs:
                   release-type: rust
 
             - name: Build Release Artifact(s)
+              uses: actions/checkout@v4
               if: ${{ steps.release.outputs.release_created }}
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
