@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.4.2...v0.5.0) (2024-10-22)
+
+
+### Features
+
+* using a different build method now ([0151a30](https://github.com/dannyhammer/multi-platform-auto-release/commit/0151a3023218b244873d2bc25e2fe4e308dfdd4f))
+
+
+### Bug Fixes
+
+* trying to build multiple releases ([13bf32c](https://github.com/dannyhammer/multi-platform-auto-release/commit/13bf32c335afc547f45296e9d5048fc261ce3d44))
+* typo ([c41b823](https://github.com/dannyhammer/multi-platform-auto-release/commit/c41b8237762138ab7922eeb92159d84383aed22b))
+
 ## [0.4.2](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.4.1...v0.4.2) (2024-10-22)
 
 
