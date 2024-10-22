@@ -41,6 +41,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Build Artifact (${{ matrix.target }})
+              if: ${{ steps.release.outputs.release_created }}
               id: build
               uses: rust-build/rust-build.action@v1.4.5
               env:
@@ -51,6 +52,7 @@ jobs:
                   EXTRA_FILES: "README.md"
 
             - name: Upload Artifact (${{ matrix.target }})
+              if: ${{ steps.release.outputs.release_created }}
               uses: actions/upload-artifact@v3
               with:
                   name: Binary (${{ matrix.target }})
