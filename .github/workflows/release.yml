@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Create Release via Release Please
-              id: release-please
+              id: release
               uses: googleapis/release-please-action@v4
               with:
                   # this assumes that you have created a personal access token
