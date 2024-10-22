@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.6.0...v0.6.1) (2024-10-22)
+
+
+### Bug Fixes
+
+* added write-all permissions ([107e0ff](https://github.com/dannyhammer/multi-platform-auto-release/commit/107e0ff975e56df5eb0621b4ac4235e496333102))
+
 ## [0.6.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.4...v0.6.0) (2024-10-22)
 
 
