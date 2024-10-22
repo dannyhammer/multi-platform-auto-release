@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.6.1...v0.7.0) (2024-10-22)
+
+
+### Features
+
+* it works now ([19a0fdf](https://github.com/dannyhammer/multi-platform-auto-release/commit/19a0fdf7f6022c1f0659015e53b11b475a3395c5))
+
 ## [0.6.1](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.6.0...v0.6.1) (2024-10-22)
 
 
