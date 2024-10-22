@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.2...v0.5.3) (2024-10-22)
+
+
+### Bug Fixes
+
+* trying gh cli ([5e1d1f3](https://github.com/dannyhammer/multi-platform-auto-release/commit/5e1d1f3d1e9807a5260f72c4ef1afc2443eeda7b))
+
 ## [0.5.2](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.1...v0.5.2) (2024-10-22)
 
 
