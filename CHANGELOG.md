@@ -1,5 +1,37 @@
 # Changelog
 
+## [2.0.0](https://github.com/dannyhammer/rust-release-pipeline/compare/v1.0.0...v2.0.0) (2024-10-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* official release
+
+### Features
+
+* it works now ([19a0fdf](https://github.com/dannyhammer/rust-release-pipeline/commit/19a0fdf7f6022c1f0659015e53b11b475a3395c5))
+* official release ([cdc1c3c](https://github.com/dannyhammer/rust-release-pipeline/commit/cdc1c3cc08ad2376f7adc72d363a4d66fe39dde9))
+* release.yml builds and uploads artifacts ([324b590](https://github.com/dannyhammer/rust-release-pipeline/commit/324b59004c5eeec0359659e20c1af57526f8fbff))
+* split Workflows ([6e161cc](https://github.com/dannyhammer/rust-release-pipeline/commit/6e161cc6ef1f6dfd02dadd29d3f43a0fba001646))
+* updated release.yaml ([4e73979](https://github.com/dannyhammer/rust-release-pipeline/commit/4e73979a07c95ab786a20c198b54cbb5b29b8d6e))
+* using a different build method now ([0151a30](https://github.com/dannyhammer/rust-release-pipeline/commit/0151a3023218b244873d2bc25e2fe4e308dfdd4f))
+
+
+### Bug Fixes
+
+* added checkout ([933f348](https://github.com/dannyhammer/rust-release-pipeline/commit/933f34800610e6c852db751829a082c8f5d8969c))
+* added conditionals ([727d68f](https://github.com/dannyhammer/rust-release-pipeline/commit/727d68ffb47b9731cc804e674230fa0bd453a96b))
+* added write-all permissions ([107e0ff](https://github.com/dannyhammer/rust-release-pipeline/commit/107e0ff975e56df5eb0621b4ac4235e496333102))
+* changed list of release files ([0c12274](https://github.com/dannyhammer/rust-release-pipeline/commit/0c1227488a18b6f3160896f24cbd9c4c070380d2))
+* fixed typo ([d9bf6fc](https://github.com/dannyhammer/rust-release-pipeline/commit/d9bf6fce9bf7994fbbb091cfbe347465c7f9e0ba))
+* moved checkout ([2a5987f](https://github.com/dannyhammer/rust-release-pipeline/commit/2a5987f9866ccd1fc585299ecedecf09a8e1f505))
+* re-ordered some steps ([1485f2a](https://github.com/dannyhammer/rust-release-pipeline/commit/1485f2aad78a0fec1d01da7c22fe6a05422c1ee8))
+* removed matrix from PR creation ([1e4674d](https://github.com/dannyhammer/rust-release-pipeline/commit/1e4674d8cbc669e9b9b5d9533b20e1cc51f1f875))
+* testing if removing a conditional helps ([2a0ac46](https://github.com/dannyhammer/rust-release-pipeline/commit/2a0ac46c4e52755c98a479e063160cf26b9a5d3f))
+* trying gh cli ([5e1d1f3](https://github.com/dannyhammer/rust-release-pipeline/commit/5e1d1f3d1e9807a5260f72c4ef1afc2443eeda7b))
+* trying to build multiple releases ([13bf32c](https://github.com/dannyhammer/rust-release-pipeline/commit/13bf32c335afc547f45296e9d5048fc261ce3d44))
+* typo ([c41b823](https://github.com/dannyhammer/rust-release-pipeline/commit/c41b8237762138ab7922eeb92159d84383aed22b))
+
 ## [1.0.0](https://github.com/dannyhammer/rust-release-pipeline/compare/v0.7.0...v1.0.0) (2024-10-22)
 
 
