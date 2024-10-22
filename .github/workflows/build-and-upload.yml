@@ -1,9 +1,12 @@
+name: Build and Upload
+
 on:
     release:
         types: [created]
 
 jobs:
     release:
+        permissions: write-all
         name: release ${{ matrix.target }}
         runs-on: ubuntu-latest
         strategy:
