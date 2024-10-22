@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/dannyhammer/rust-release-pipeline/compare/v0.7.0...v1.0.0) (2024-10-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* official release
+
+### Features
+
+* official release ([cdc1c3c](https://github.com/dannyhammer/rust-release-pipeline/commit/cdc1c3cc08ad2376f7adc72d363a4d66fe39dde9))
+
 ## [0.7.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.6.1...v0.7.0) (2024-10-22)
 
 
