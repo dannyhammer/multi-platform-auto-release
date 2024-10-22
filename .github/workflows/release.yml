@@ -66,7 +66,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               # run: gh release upload ${{ steps.release.outputs.tag_name }} ./target/release/multi-platform-auto-release
-              run: gh release upload ${{ steps.release.outputs.tag_name }} ${{ matrix.archive }}
+              run: gh release upload ${{ steps.release.outputs.tag_name }} x86_64-pc-windows-gnu.zip x86_64-unknown-linux-musl.tar.gz x86_64-apple-darwin.zip
 
     # build-release:
     #     name: Build Release
