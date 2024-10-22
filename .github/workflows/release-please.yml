@@ -1,4 +1,4 @@
-name: release-please
+name: Release Please
 
 on:
     push:
@@ -11,21 +11,10 @@ permissions:
 
 jobs:
     release-please:
-        name: Create Release-Please Release
+        name: Release Please
         runs-on: ubuntu-latest
-        # strategy:
-        #     fail-fast: false
-        #     matrix:
-        #         include:
-        #             - target: x86_64-pc-windows-gnu
-        #               archive: zip
-        #             - target: x86_64-unknown-linux-musl
-        #               archive: tar.gz tar.xz tar.zst
-        #             - target: x86_64-apple-darwin
-        #               archive: zip
         steps:
             - name: Create Release via Release Please
-              # id: release
               uses: googleapis/release-please-action@v4
               with:
                   # this assumes that you have created a personal access token
@@ -35,65 +24,3 @@ jobs:
                   # this is a built-in strategy in release-please, see "Action Inputs"
                   # for more options
                   release-type: rust
-
-            # - name: Checkout (${{ matrix.target }})
-            #   if: ${{ steps.release.outputs.release_created }}
-            #   uses: actions/checkout@v4
-
-            # - name: Build Artifact (${{ matrix.target }})
-            #   if: ${{ steps.release.outputs.release_created }}
-            #   id: build
-            #   uses: rust-build/rust-build.action@v1.4.5
-            #   env:
-            #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            #   with:
-            #       RUSTTARGET: ${{ matrix.target }}
-            #       ARCHIVE_TYPES: ${{ matrix.archive }}
-            #       EXTRA_FILES: "README.md"
-
-            # - name: Upload Artifact (${{ matrix.target }})
-            #   if: ${{ steps.release.outputs.release_created }}
-            #   uses: actions/upload-artifact@v4
-            #   with:
-            #       name: Binary (${{ matrix.target }})
-            #       path: |
-            #           ${{ steps.build.outputs.BUILT_ARCHIVE }}
-            #           ${{ steps.build.outputs.BUILT_CHECKSUM }}
-            #       if-no-files-found: error
-
-            # - name: Upload Artifact (${{ matrix.target }})
-            #   if: ${{ steps.release.outputs.release_created }}
-            #   env:
-            #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            #   # run: gh release upload ${{ steps.release.outputs.tag_name }} ./target/release/multi-platform-auto-release
-            #   run: gh release upload ${{ steps.release.outputs.tag_name }} x86_64-pc-windows-gnu.zip x86_64-unknown-linux-musl.tar.gz x86_64-apple-darwin.zip
-
-    # build-release:
-    #     name: Build Release
-    #     id: build-release
-    #     strategy:
-    #         matrix:
-    #             os: [ubuntu-latest, macos-latest, windows-latest]
-    #             include:
-    #                 - os: ubuntu-latest
-    #                   release_suffix: ubuntu
-    #                 - os: macos-latest
-    #                   release_suffix: mac
-    #                 - os: windows-latest
-    #                   release_suffix: windows
-    #     runs-on: ${{ matrix.os }}
-    #     steps:
-    #         - name: Checkout code
-    #           uses: actions/checkout@v2
-
-    #         - name: Build for Linux
-    #           if: matrix.os == 'ubuntu-latest'
-    #           run: echo "Ubuntu Latest" > release_ubuntu
-
-    #         - name: Build for MacOS
-    #           if: matrix.os == 'macos-latest'
-    #           run: echo "MacOS Latest" > release_mac
-
-    #         - name: Build for Windows
-    #           if: matrix.os == 'windows-latest'
-    #           run: echo "Windows Latest" > release_windows
