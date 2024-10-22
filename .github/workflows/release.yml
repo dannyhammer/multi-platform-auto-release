@@ -11,7 +11,7 @@ permissions:
 
 jobs:
     release-please:
-        name: Create Release-Please Release (${{ matrix.target }})
+        name: Create Release-Please Release
         runs-on: ubuntu-latest
         strategy:
             fail-fast: false
