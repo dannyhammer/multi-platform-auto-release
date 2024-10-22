@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.1...v0.5.2) (2024-10-22)
+
+
+### Bug Fixes
+
+* added conditionals ([727d68f](https://github.com/dannyhammer/multi-platform-auto-release/commit/727d68ffb47b9731cc804e674230fa0bd453a96b))
+* re-ordered some steps ([1485f2a](https://github.com/dannyhammer/multi-platform-auto-release/commit/1485f2aad78a0fec1d01da7c22fe6a05422c1ee8))
+
 ## [0.5.1](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.0...v0.5.1) (2024-10-22)
 
 
