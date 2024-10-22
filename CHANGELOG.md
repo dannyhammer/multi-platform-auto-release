@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.4...v0.6.0) (2024-10-22)
+
+
+### Features
+
+* split Workflows ([6e161cc](https://github.com/dannyhammer/multi-platform-auto-release/commit/6e161cc6ef1f6dfd02dadd29d3f43a0fba001646))
+
 ## [0.5.4](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.3...v0.5.4) (2024-10-22)
 
 
