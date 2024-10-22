@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.5.0...v0.5.1) (2024-10-22)
+
+
+### Bug Fixes
+
+* testing if removing a conditional helps ([2a0ac46](https://github.com/dannyhammer/multi-platform-auto-release/commit/2a0ac46c4e52755c98a479e063160cf26b9a5d3f))
+
 ## [0.5.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.4.2...v0.5.0) (2024-10-22)
 
 
