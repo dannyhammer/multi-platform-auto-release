@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.4.0...v0.4.1) (2024-10-22)
+
+
+### Bug Fixes
+
+* fixed typo ([d9bf6fc](https://github.com/dannyhammer/multi-platform-auto-release/commit/d9bf6fce9bf7994fbbb091cfbe347465c7f9e0ba))
+
 ## [0.4.0](https://github.com/dannyhammer/multi-platform-auto-release/compare/v0.3.0...v0.4.0) (2024-10-22)
 
 
